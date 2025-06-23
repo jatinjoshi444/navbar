@@ -141,12 +141,17 @@
       right: 0;
     }
 
-    .mobile-menu .close-btn {
-      font-size: 28px;
-      cursor: pointer;
-      text-align: right;
-      padding: 20px;
-    }
+    .mobile-menu .close-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+ .mobile-menu .close-btn {
+  font-size: 28px;
+  cursor: pointer;
+  color: #BE945A;
+}
 
     .mobile-nav-items {
       display: flex;
@@ -294,7 +299,9 @@
 
   <!-- 🔷 MOBILE MENU -->
   <div class="mobile-menu" id="mobileMenu">
-    <span class="close-btn" id="closeBtn">&times;</span>
+    <div class="close-wrapper">
+      <span class="close-btn" id="closeBtn">&times;</span>
+    </div>
 
     <div class="mobile-nav-items">
       <ul>
